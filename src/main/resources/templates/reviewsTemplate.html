@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reviewsStyle.css">
+    <title>Brady's Review Site</title>
+</head>
+<body>
+
+<header>
+    <h1>The Worst Cleveland Browns Seasons in Recent Memory</h1>
+</header>
+<main>
+    <p>Warning: Do Not Click the Reviews Below if You Are Alone or in a Bad State of Mind.</p>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.season}"></a>
+        </li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy; Brady Michael Gasser 2021-22 WCCI Student</small>
+</footer>
+</body>
+</html>

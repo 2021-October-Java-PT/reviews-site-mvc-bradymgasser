@@ -1,0 +1,36 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.618em;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #130e08;
+}
+
+header {
+  color: rgb(238, 67, 4);
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 2em;
+}
+
+main {
+  font-size: x-large;
+  margin-top: 2em;
+}
+
+ul {
+  margin-top: 3em;
+}
+
+footer {
+  margin-top: 15em;
+}
+main,
+ul,
+footer {
+  color: white;
+  text-align: center;
+}

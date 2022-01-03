@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reviewStyle.css">
+    <title th:text="${reviewModel.season}"></title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.season}"></h1>
+</header>
+
+<main>
+
+    <h2 th:text="${reviewModel.description}"></h2>
+
+    <ul>
+        <li th:text="${reviewModel.ranking}"></li>
+        <li th:text="${reviewModel.record}"></li>
+        <li th:text="${reviewModel.details}"></li>
+    </ul>
+
+    <img th:src="${reviewModel.image}">
+
+    <h3><p><a href="/reviews">Back to Other Seasons</a></p></h3>
+</main>
+
+<footer>
+    <small>&copy Brady Michael Gasser 2021-22 WCCI Student</small>
+</footer>
+
+</body>
+</html>
